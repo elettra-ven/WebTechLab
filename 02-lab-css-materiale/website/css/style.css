@@ -1,13 +1,13 @@
 /*
 Regola reset
 */
-body, header, h1 {
+body, header, h1, h2 {
     margin: 0;
     padding: 0;
 }
 
 
-img {
+aside img {
     width: 50px;
 }
 
@@ -15,7 +15,7 @@ body {
     background-color: #e4e4e4;
 }
 
-body > header, footer {
+body > header, body > footer {
     background-color: rgb(54, 54, 54);
     color: #ffff;
     text-align: center;
@@ -32,6 +32,8 @@ nav {
 
 nav > ul {
     list-style: none;
+    padding: 0;
+    margin: 0; 
 }
 
 nav ul li {
@@ -58,4 +60,52 @@ nav ul li a {
 
 nav ul li a:hover{
     color: rgb(219,69,83);
+}
+
+main {
+    margin: 20px 5% 0;
+}
+
+main > article {
+    background-color: #fff;
+    border: 1px solid #cacaca;
+    margin-bottom: 10px;
+}
+
+article > div {
+    height: 200px;
+    text-align: center;
+}
+
+article > div > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+article > h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+article > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+article > h2, article > p {
+    padding: 0 5%;
+} 
+
+article > a {
+    display: block; 
+    width: fit-content;
+    margin-left: auto; 
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(221,221,221);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
